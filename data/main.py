@@ -2,6 +2,10 @@ import pandas as pd
 # Import Path to help build file and folder locations.
 from pathlib import Path
 from difflib import get_close_matches
+from sklearn.preprocessing import MinMaxScaler
+from sklearn.metrics.pairwise import euclidean_distances
+
+
 
 def load_songs():
     """Read the CSV and return a pandas DataFrame (a table of song rows)."""
@@ -55,6 +59,29 @@ def get_features(song_table):
     
     return song_table[feature_names]
 
+def get_closest_distances(all_scaled_features, liked_scaled_features):
+    '''
+    returns the euclidean_distances of each song compared with each favorite
+    it takes the differene 
+
+    Both inputs contain scaled features in the same column order.
+    The returned array has one score per dataset song, in the original
+    row order. Lower scores indicate closer matches to the favorites
+    as a group. Favorites and duplicate tracks are not excluded here.
+    '''
+    distances = euclidean_distances(
+        all_scaled_features, 
+        liked_scaled_features
+        )
+
+    return distances.mean(axis=1)
+
+
+def sort(candidate_song, average_distance, amount_of_songs_wanted ):
+    #attach the average distance to the candidate songs to sort
+    candidate_song["average_distances"] = average_distance
+    ranked_songs = candidate_song.sort_values("average_distances")
+    return ranked_songs.head(amount_of_songs_wanted)
 
 def main():
     """Collect song choices until blank input, then display their table and features.
@@ -63,6 +90,12 @@ def main():
     """
     
     songs = load_songs()
+    songs = songs.drop_duplicates(subset=["track_name", "artists"])
+
+
+    all_features = get_features(songs)
+    scaler = MinMaxScaler()
+    all_scaled_features = scaler.fit(all_features)
     # Create this once, before the loop, so earlier choices are kept.
     liked_songs = []
     while True:
@@ -82,13 +115,36 @@ def main():
     if liked_songs:
         # Turn the list of song rows into a table after the user finishes.
         liked_table = pd.DataFrame(liked_songs)
+        #Get the ID's of your favorite songs
+        favorite_ids = liked_table["track_id"]
+
+        #Check the dataset set songs and if they are a favorite
+        isnt_favorite = ~songs["track_id"].isin(favorite_ids)
+        candidate_songs = songs[isnt_favorite].copy()
         # Keep each track ID once if the user picked the same track again.
         liked_table=liked_table.drop_duplicates(subset=["track_id"])
-        liked_feature = get_features(liked_table)
-        print(liked_feature)
+        liked_song_features = get_features(liked_table)
+        liked_scaled_features = scaler.transform(liked_song_features)
+
+        #Remove duplicate candidate tracks
+        candidate_songs =  candidate_songs.drop_duplicates(subset=["track_id"])
+
+        #Scale the songs that arent favorite
+        candidate_features = get_features(candidate_songs)
+        candidate_scaled_features = scaler.transform(candidate_features)
+
+        #compare candidates with your favorites
+        average_distances = get_closest_distances(candidate_scaled_features,liked_scaled_features)
+
+        #get the ___# lowest average songs
+        closest_matches = sort(candidate_songs, average_distances, 5)
+        print(f"\033[1:3mYour Closest Matches are\033[0m")
+        print(f"_________________________")
+        print(f"")
+        for _, song in closest_matches.iterrows():
+            print (f"\033[1:3m{song["track_name"]}\033[0m by {song["artists"]} with {float(song["average_distances"]):.3f} error")
     else:
         print("You didnt choose any songs")
-
 
 
 # Start the program when this file is run directly.
