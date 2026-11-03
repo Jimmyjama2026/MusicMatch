@@ -1,0 +1,17 @@
+{
+  "load_seconds": 3.632696700282395,
+  "catalog_entries": 2828,
+  "cached_edges": 714,
+  "queries_per_engine": 6,
+  "milliseconds": {
+    "audio": {
+      "mean": 130.95833345626792,
+      "max": 150.29430016875267
+    },
+    "enriched": {
+      "mean": 141.32566672439376,
+      "max": 161.56189981848001
+    }
+  },
+  "limitations": "Single-machine warm-query smoke measurement during collection; not a controlled performance guarantee or recommendation-quality evaluation."
+}

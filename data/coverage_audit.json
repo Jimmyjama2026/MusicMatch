@@ -1,0 +1,173 @@
+{
+  "method": "Exact normalized credited-artist matching; valid four audio features; unique title plus complete artist credit. Includes collaborations and versions, not verified studio-only discographies. Historical source through early 2021. Namesakes not disambiguated by artist ID.",
+  "artists": [
+    {
+      "artist": "Olivia Rodrigo",
+      "active": 5,
+      "cached_source": 5,
+      "additional": 0
+    },
+    {
+      "artist": "Tate McRae",
+      "active": 11,
+      "cached_source": 11,
+      "additional": 0
+    },
+    {
+      "artist": "Justin Bieber",
+      "active": 110,
+      "cached_source": 124,
+      "additional": 14
+    },
+    {
+      "artist": "NF",
+      "active": 35,
+      "cached_source": 35,
+      "additional": 0
+    },
+    {
+      "artist": "Luke Combs",
+      "active": 26,
+      "cached_source": 26,
+      "additional": 0
+    },
+    {
+      "artist": "Zach Bryan",
+      "active": 1,
+      "cached_source": 1,
+      "additional": 0
+    },
+    {
+      "artist": "Bailey Zimmerman",
+      "active": 0,
+      "cached_source": 0,
+      "additional": 0
+    },
+    {
+      "artist": "Halsey",
+      "active": 29,
+      "cached_source": 29,
+      "additional": 0
+    },
+    {
+      "artist": "Doja Cat",
+      "active": 22,
+      "cached_source": 22,
+      "additional": 0
+    },
+    {
+      "artist": "Dua Lipa",
+      "active": 34,
+      "cached_source": 40,
+      "additional": 6
+    },
+    {
+      "artist": "Drake",
+      "active": 209,
+      "cached_source": 209,
+      "additional": 0
+    },
+    {
+      "artist": "Bad Bunny",
+      "active": 143,
+      "cached_source": 144,
+      "additional": 1
+    },
+    {
+      "artist": "Metro Boomin",
+      "active": 15,
+      "cached_source": 15,
+      "additional": 0
+    },
+    {
+      "artist": "Plain White T’s",
+      "active": 4,
+      "cached_source": 4,
+      "additional": 0
+    },
+    {
+      "artist": "Morgan Wallen",
+      "active": 38,
+      "cached_source": 38,
+      "additional": 0
+    },
+    {
+      "artist": "Khalid",
+      "active": 39,
+      "cached_source": 40,
+      "additional": 1
+    },
+    {
+      "artist": "Bruno Mars",
+      "active": 54,
+      "cached_source": 54,
+      "additional": 0
+    },
+    {
+      "artist": "Kanye West",
+      "active": 162,
+      "cached_source": 162,
+      "additional": 0
+    },
+    {
+      "artist": "Riley Green",
+      "active": 2,
+      "cached_source": 2,
+      "additional": 0
+    },
+    {
+      "artist": "Noah Kahan",
+      "active": 6,
+      "cached_source": 6,
+      "additional": 0
+    },
+    {
+      "artist": "Taylor Swift",
+      "active": 192,
+      "cached_source": 193,
+      "additional": 1
+    },
+    {
+      "artist": "Coldplay",
+      "active": 67,
+      "cached_source": 69,
+      "additional": 2
+    },
+    {
+      "artist": "Imagine Dragons",
+      "active": 46,
+      "cached_source": 47,
+      "additional": 1
+    },
+    {
+      "artist": "Jack Johnson",
+      "active": 68,
+      "cached_source": 68,
+      "additional": 0
+    },
+    {
+      "artist": "Benson Boone",
+      "active": 0,
+      "cached_source": 0,
+      "additional": 0
+    },
+    {
+      "artist": "Jordan Davis",
+      "active": 4,
+      "cached_source": 4,
+      "additional": 0
+    },
+    {
+      "artist": "Post Malone",
+      "active": 50,
+      "cached_source": 51,
+      "additional": 1
+    }
+  ],
+  "unique_active": 1358,
+  "unique_cached": 1384,
+  "unique_additional": 26,
+  "raw_tracks_csv_bytes": 111366271,
+  "existing_dataset_bytes": 279052278,
+  "online_coverage": "Unverified: MusicBrainz/AcousticBrainz API connections unavailable; no absence-of-data inference."
+}

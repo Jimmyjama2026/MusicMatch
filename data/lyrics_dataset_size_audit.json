@@ -1,0 +1,16 @@
+{
+  "source": "https://api.github.com/repos/zhuole1025/LyricWhiz/git/trees/main?recursive=1",
+  "commit": "0b66527ed2f7ade13944b43364de403f8d99e638",
+  "truncated": false,
+  "groups": {
+    "MulJam/": {
+      "files": 6071,
+      "bytes": 8689464
+    },
+    "MulJam_v2.0/": {
+      "files": 77,
+      "bytes": 12974682
+    }
+  },
+  "note": "GitHub file payload sizes, not archive transfer size or filesystem allocation. No dataset files downloaded."
+}

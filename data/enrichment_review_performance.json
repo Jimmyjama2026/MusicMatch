@@ -1,0 +1,19 @@
+{
+  "load_seconds": 4.722659499850124,
+  "catalog_entries": 4115,
+  "usable_edges": 725,
+  "queries_per_engine": 6,
+  "milliseconds": {
+    "audio": {
+      "mean": 233.09115002242228,
+      "max": 274.4451998732984
+    },
+    "enriched": {
+      "mean": 236.99544991056123,
+      "max": 293.6050998978317
+    }
+  },
+  "optional_data_warning": null,
+  "result_count": 5,
+  "limitations": "Single-machine alternating warm-query smoke measurement; not a latency guarantee or quality evaluation."
+}

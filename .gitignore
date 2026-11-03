@@ -7,3 +7,12 @@ __pycache__/
 !.env.example
 desktop.ini
 Thumbs.db
+
+data/feedback.sqlite3*
+
+data/sources/
+data/dataset.original.csv
+data/dataset.next.csv
+data/enrichment/
+data/vectors/
+data/evaluation/

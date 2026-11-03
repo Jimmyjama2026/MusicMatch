@@ -1,0 +1,250 @@
+{
+  "recording_entries": 4115,
+  "sources": {
+    "musicbrainz": 3439,
+    "listenbrainz_musicbrainz_metadata": 676
+  },
+  "artists_resolved": 27,
+  "artists_with_musicbrainz_recordings": 22,
+  "related_edges": 885,
+  "popularity_records": 2054,
+  "catalog_retained_bytes": 6474707,
+  "catalog_transfer_upper_bound": 76090652,
+  "text_retained_bytes": 21304638,
+  "text_download_response_bytes": 12880118,
+  "additional_retained_bytes": 27779345,
+  "data_artifact_bytes_including_existing": 306831623,
+  "complete": false,
+  "artists": [
+    {
+      "artist": "Olivia Rodrigo",
+      "retained_musicbrainz_recordings": 540,
+      "provider_reported_recordings": 540,
+      "complete": false,
+      "listening_edges": 85
+    },
+    {
+      "artist": "Tate McRae",
+      "retained_musicbrainz_recordings": 200,
+      "provider_reported_recordings": 287,
+      "complete": false,
+      "listening_edges": 90
+    },
+    {
+      "artist": "Justin Bieber",
+      "retained_musicbrainz_recordings": 200,
+      "provider_reported_recordings": 1076,
+      "complete": false,
+      "listening_edges": 85
+    },
+    {
+      "artist": "NF",
+      "retained_musicbrainz_recordings": 142,
+      "provider_reported_recordings": 142,
+      "complete": true,
+      "listening_edges": 95
+    },
+    {
+      "artist": "Luke Combs",
+      "retained_musicbrainz_recordings": 184,
+      "provider_reported_recordings": 184,
+      "complete": true,
+      "listening_edges": 80
+    },
+    {
+      "artist": "Zach Bryan",
+      "retained_musicbrainz_recordings": 200,
+      "provider_reported_recordings": 263,
+      "complete": false,
+      "listening_edges": 90
+    },
+    {
+      "artist": "Bailey Zimmerman",
+      "retained_musicbrainz_recordings": 81,
+      "provider_reported_recordings": 81,
+      "complete": true,
+      "listening_edges": 90
+    },
+    {
+      "artist": "Halsey",
+      "retained_musicbrainz_recordings": 200,
+      "provider_reported_recordings": 497,
+      "complete": false,
+      "listening_edges": 85
+    },
+    {
+      "artist": "Doja Cat",
+      "retained_musicbrainz_recordings": 200,
+      "provider_reported_recordings": 645,
+      "complete": false,
+      "listening_edges": 95
+    },
+    {
+      "artist": "Dua Lipa",
+      "retained_musicbrainz_recordings": 200,
+      "provider_reported_recordings": 922,
+      "complete": false,
+      "listening_edges": 90
+    },
+    {
+      "artist": "Drake",
+      "retained_musicbrainz_recordings": 200,
+      "provider_reported_recordings": 2616,
+      "complete": false,
+      "listening_edges": 0
+    },
+    {
+      "artist": "Bad Bunny",
+      "retained_musicbrainz_recordings": 100,
+      "provider_reported_recordings": 514,
+      "complete": false,
+      "listening_edges": 0
+    },
+    {
+      "artist": "Metro Boomin",
+      "retained_musicbrainz_recordings": 100,
+      "provider_reported_recordings": 657,
+      "complete": false,
+      "listening_edges": 0
+    },
+    {
+      "artist": "Plain White T’s",
+      "retained_musicbrainz_recordings": 100,
+      "provider_reported_recordings": 240,
+      "complete": false,
+      "listening_edges": 0
+    },
+    {
+      "artist": "Morgan Wallen",
+      "retained_musicbrainz_recordings": 100,
+      "provider_reported_recordings": 278,
+      "complete": false,
+      "listening_edges": 0
+    },
+    {
+      "artist": "Khalid",
+      "retained_musicbrainz_recordings": 100,
+      "provider_reported_recordings": 461,
+      "complete": false,
+      "listening_edges": 0
+    },
+    {
+      "artist": "Bruno Mars",
+      "retained_musicbrainz_recordings": 100,
+      "provider_reported_recordings": 591,
+      "complete": false,
+      "listening_edges": 0
+    },
+    {
+      "artist": "Kanye West",
+      "retained_musicbrainz_recordings": 100,
+      "provider_reported_recordings": 5091,
+      "complete": false,
+      "listening_edges": 0
+    },
+    {
+      "artist": "Riley Green",
+      "retained_musicbrainz_recordings": 100,
+      "provider_reported_recordings": 187,
+      "complete": false,
+      "listening_edges": 0
+    },
+    {
+      "artist": "Noah Kahan",
+      "retained_musicbrainz_recordings": 100,
+      "provider_reported_recordings": 195,
+      "complete": false,
+      "listening_edges": 0
+    },
+    {
+      "artist": "Taylor Swift",
+      "retained_musicbrainz_recordings": 100,
+      "provider_reported_recordings": 2901,
+      "complete": false,
+      "listening_edges": 0
+    },
+    {
+      "artist": "Coldplay",
+      "retained_musicbrainz_recordings": 0,
+      "provider_reported_recordings": null,
+      "complete": false,
+      "listening_edges": 0
+    },
+    {
+      "artist": "Imagine Dragons",
+      "retained_musicbrainz_recordings": 100,
+      "provider_reported_recordings": 835,
+      "complete": false,
+      "listening_edges": 0
+    },
+    {
+      "artist": "Jack Johnson",
+      "retained_musicbrainz_recordings": 0,
+      "provider_reported_recordings": null,
+      "complete": false,
+      "listening_edges": 0
+    },
+    {
+      "artist": "Benson Boone",
+      "retained_musicbrainz_recordings": 0,
+      "provider_reported_recordings": null,
+      "complete": false,
+      "listening_edges": 0
+    },
+    {
+      "artist": "Jordan Davis",
+      "retained_musicbrainz_recordings": 0,
+      "provider_reported_recordings": null,
+      "complete": false,
+      "listening_edges": 0
+    },
+    {
+      "artist": "Post Malone",
+      "retained_musicbrainz_recordings": 0,
+      "provider_reported_recordings": null,
+      "complete": false,
+      "listening_edges": 0
+    }
+  ],
+  "errors": [
+    {
+      "artist": "Plain White T’s",
+      "provider": "musicbrainz",
+      "error": "[WinError 5] Access is denied: 'C:\\\\Users\\\\jimmy\\\\OneDrive\\\\Desktop\\\\MusicMatch\\\\data\\\\enrichment\\\\catalog.json.tmp' -> 'C:\\\\Users\\\\jimmy\\\\OneDrive\\\\Desktop\\\\MusicMatch\\\\data\\\\enrichment\\\\catalog.json'"
+    },
+    {
+      "artist": "Coldplay",
+      "provider": "musicbrainz",
+      "error": "HTTP 503: {\"error\": \"The MusicBrainz web server is currently busy. Please try again later.\"}\n"
+    },
+    {
+      "artist": "Jack Johnson",
+      "provider": "musicbrainz",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1082)>"
+    },
+    {
+      "artist": "Benson Boone",
+      "provider": "musicbrainz",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1082)>"
+    },
+    {
+      "artist": "Jordan Davis",
+      "provider": "musicbrainz",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1082)>"
+    },
+    {
+      "artist": "Post Malone",
+      "provider": "musicbrainz",
+      "error": "musicbrainz.org: connection unavailable earlier in this run"
+    }
+  ],
+  "snapshot_generated_at": "2026-10-31T02:25:08.022266+00:00",
+  "notes": [
+    "Catalog MBIDs include versions; not unique songs.",
+    "requested_artists records latest subset run; artists list retains all27 resolved identities.",
+    "Transfer upper bound overcounts failed/partial-response reservations; successful transferred-byte total unknown.",
+    "Per-artist recording counts derived from retained source rows, not last-pass pagination counters."
+  ],
+  "usable_distinct_seed_recording_edges": 725,
+  "edges_without_recording_metadata": 160
+}

@@ -1,0 +1,81 @@
+{
+  "artist_bonus": 0.2,
+  "favorite_count": 6,
+  "fresh_exclusions": 35,
+  "before_artist_weight": [
+    {
+      "title": "Quite Miss Home",
+      "artists": "James Arthur",
+      "distance": 0.03542676195502281,
+      "artist_adjustment": 0.0,
+      "ranking_score": 0.03542676195502281
+    },
+    {
+      "title": "אור החיים",
+      "artists": "Ishay Ribo",
+      "distance": 0.0386124923825264,
+      "artist_adjustment": 0.0,
+      "ranking_score": 0.0386124923825264
+    },
+    {
+      "title": "Don't Give Up On Me - (From \"Five Feet Apart\")",
+      "artists": "Andy Grammer",
+      "distance": 0.05004226788878441,
+      "artist_adjustment": 0.0,
+      "ranking_score": 0.05004226788878441
+    },
+    {
+      "title": "Zaramay: Bzrp Music Sessions, Vol. 31",
+      "artists": "Bizarrap; ZARAMAY",
+      "distance": 0.05302667245268822,
+      "artist_adjustment": 0.0,
+      "ranking_score": 0.05302667245268822
+    },
+    {
+      "title": "Nightclubbing",
+      "artists": "Grace Jones",
+      "distance": 0.059676676988601685,
+      "artist_adjustment": 0.0,
+      "ranking_score": 0.059676676988601685
+    }
+  ],
+  "after_artist_weight": [
+    {
+      "title": "KMT",
+      "artists": "Drake; Giggs",
+      "distance": 0.06142517924308777,
+      "artist_adjustment": -0.20000000298023224,
+      "ranking_score": -0.13857482373714447
+    },
+    {
+      "title": "Sneakin’",
+      "artists": "Drake; 21 Savage",
+      "distance": 0.08118276298046112,
+      "artist_adjustment": -0.20000000298023224,
+      "ranking_score": -0.11881723999977112
+    },
+    {
+      "title": "Wondering - From \"High School Musical: The Musical: The Series\"",
+      "artists": "Olivia Rodrigo; Julia Lester",
+      "distance": 0.11656999588012695,
+      "artist_adjustment": -0.20000000298023224,
+      "ranking_score": -0.08343000710010529
+    },
+    {
+      "title": "אור החיים",
+      "artists": "Ishay Ribo",
+      "distance": 0.0386124923825264,
+      "artist_adjustment": -0.0,
+      "ranking_score": 0.0386124923825264
+    },
+    {
+      "title": "Zaramay: Bzrp Music Sessions, Vol. 31",
+      "artists": "Bizarrap; ZARAMAY",
+      "distance": 0.05302667245268822,
+      "artist_adjustment": -0.0,
+      "ranking_score": 0.05302667245268822
+    }
+  ],
+  "query_ms": 154.38929991796613,
+  "limitations": "Single-machine current saved-favorites diagnostic with Fresh exclusions, without ratings. Read-only user database; no taste-quality claim."
+}

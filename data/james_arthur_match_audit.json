@@ -1,0 +1,188 @@
+{
+  "title_matches_in_catalog": 1,
+  "observed_matches": [
+    {
+      "recorded_model": "rich-neighborhoods-artist-listening-v2",
+      "saved_score": 0.03542676195502281,
+      "liked": 1,
+      "vote_reason": null,
+      "candidate": {
+        "track_id": "2deFH5zveEBEUuURpqTN3C",
+        "track_name": "Quite Miss Home",
+        "artists": "James Arthur",
+        "valence": 0.156,
+        "tempo": 136.824,
+        "energy": 0.43,
+        "danceability": 0.578,
+        "acousticness": 0.608,
+        "instrumentalness": 2.67e-06,
+        "speechiness": 0.0282,
+        "loudness": -6.396,
+        "liveness": 0.117,
+        "duration_ms": 243187,
+        "key": 10,
+        "mode": 1,
+        "time_signature": 4
+      },
+      "closest_anchor": {
+        "track_id": "7lPN2DXiMsVn7XUKtOW1CS",
+        "track_name": "drivers license",
+        "artists": "Olivia Rodrigo",
+        "valence": 0.132,
+        "tempo": 143.874,
+        "energy": 0.436,
+        "danceability": 0.585,
+        "acousticness": 0.721,
+        "instrumentalness": 1.31e-05,
+        "speechiness": 0.0601,
+        "loudness": -8.761,
+        "liveness": 0.105,
+        "duration_ms": 242014,
+        "key": 10,
+        "mode": 1,
+        "time_signature": 4
+      },
+      "raw_vector_distance": 0.03542676195502281,
+      "per_anchor": [
+        {
+          "title": "drivers license",
+          "artists": "Olivia Rodrigo",
+          "distance": 0.03542676195502281
+        },
+        {
+          "title": "deja vu",
+          "artists": "Olivia Rodrigo",
+          "distance": 0.08937734365463257
+        },
+        {
+          "title": "Heading South",
+          "artists": "Zach Bryan",
+          "distance": 0.17301008105278015
+        },
+        {
+          "title": "What’s Next",
+          "artists": "Drake",
+          "distance": 0.16625165939331055
+        },
+        {
+          "title": "God's Plan",
+          "artists": "Drake",
+          "distance": 0.2108130306005478
+        },
+        {
+          "title": "Toosie Slide",
+          "artists": "Drake",
+          "distance": 0.22649520635604858
+        }
+      ],
+      "squared_distance_components": [
+        {
+          "dimension": "acousticness",
+          "squared_difference": 0.012768994085490704,
+          "fraction": 0.48447853462254314
+        },
+        {
+          "dimension": "loudness",
+          "squared_difference": 0.010039660148322582,
+          "fraction": 0.3809227104501982
+        },
+        {
+          "dimension": "tempo",
+          "squared_difference": 0.002117383759468794,
+          "fraction": 0.08033733700187479
+        },
+        {
+          "dimension": "speechiness",
+          "squared_difference": 0.0007123270188458264,
+          "fraction": 0.027026964532359907
+        },
+        {
+          "dimension": "valence",
+          "squared_difference": 0.0005759994965046644,
+          "fraction": 0.021854453854512724
+        },
+        {
+          "dimension": "liveness",
+          "squared_difference": 5.0400001782691106e-05,
+          "fraction": 0.001912266451466008
+        },
+        {
+          "dimension": "danceability",
+          "squared_difference": 4.899999112240039e-05,
+          "fraction": 0.0018591475363335852
+        },
+        {
+          "dimension": "energy",
+          "squared_difference": 3.6000146792503074e-05,
+          "fraction": 0.001365910129447607
+        },
+        {
+          "dimension": "duration_ms",
+          "squared_difference": 6.397230208676774e-06,
+          "fraction": 0.00024272238646147706
+        },
+        {
+          "dimension": "instrumentalness",
+          "squared_difference": 1.0878489775656419e-10,
+          "fraction": 4.127494108095048e-09
+        },
+        {
+          "dimension": "meter_7",
+          "squared_difference": 0.0,
+          "fraction": 0.0
+        },
+        {
+          "dimension": "meter_5",
+          "squared_difference": 0.0,
+          "fraction": 0.0
+        },
+        {
+          "dimension": "meter_6",
+          "squared_difference": 0.0,
+          "fraction": 0.0
+        },
+        {
+          "dimension": "meter_3",
+          "squared_difference": 0.0,
+          "fraction": 0.0
+        },
+        {
+          "dimension": "meter_4",
+          "squared_difference": 0.0,
+          "fraction": 0.0
+        },
+        {
+          "dimension": "key_cos",
+          "squared_difference": 0.0,
+          "fraction": 0.0
+        },
+        {
+          "dimension": "key_sin",
+          "squared_difference": 0.0,
+          "fraction": 0.0
+        },
+        {
+          "dimension": "meter_1",
+          "squared_difference": 0.0,
+          "fraction": 0.0
+        },
+        {
+          "dimension": "meter_2",
+          "squared_difference": 0.0,
+          "fraction": 0.0
+        },
+        {
+          "dimension": "mode_major",
+          "squared_difference": 0.0,
+          "fraction": 0.0
+        },
+        {
+          "dimension": "mode_minor",
+          "squared_difference": 0.0,
+          "fraction": 0.0
+        }
+      ]
+    }
+  ],
+  "interpretation": "Feature agreement establishes numerical similarity only; no lyrics/audio files analyzed. One user-confirmed positive cannot establish which perceptual property caused enjoyment."
+}

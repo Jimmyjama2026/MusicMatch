@@ -1,0 +1,84 @@
+{
+  "scope": "Small title/artist availability sample, not discography coverage or lyric accuracy verification. No lyrics stored.",
+  "results": [
+    {
+      "artist": "Olivia Rodrigo",
+      "title": "vampire",
+      "url": "https://lrclib.net/api/search?artist_name=Olivia+Rodrigo&track_name=vampire",
+      "response_bytes": 236959,
+      "returned_records": 20,
+      "exact_name_records_with_plain_lyrics": 20,
+      "smallest_matching_record_bytes": 11822
+    },
+    {
+      "artist": "Benson Boone",
+      "title": "Beautiful Things",
+      "url": "https://lrclib.net/api/search?artist_name=Benson+Boone&track_name=Beautiful+Things",
+      "response_bytes": 165401,
+      "returned_records": 20,
+      "exact_name_records_with_plain_lyrics": 20,
+      "smallest_matching_record_bytes": 8259
+    },
+    {
+      "artist": "Tate McRae",
+      "title": "greedy",
+      "url": "https://lrclib.net/api/search?artist_name=Tate+McRae&track_name=greedy",
+      "response_bytes": 165471,
+      "returned_records": 20,
+      "exact_name_records_with_plain_lyrics": 20,
+      "smallest_matching_record_bytes": 8261
+    },
+    {
+      "artist": "Luke Combs",
+      "title": "Fast Car",
+      "url": "https://lrclib.net/api/search?artist_name=Luke+Combs&track_name=Fast+Car",
+      "error": "HTTP Error 503: Service Unavailable"
+    },
+    {
+      "artist": "Zach Bryan",
+      "title": "I Remember Everything",
+      "url": "https://lrclib.net/api/search?artist_name=Zach+Bryan&track_name=I+Remember+Everything",
+      "error": "HTTP Error 503: Service Unavailable"
+    },
+    {
+      "artist": "Bailey Zimmerman",
+      "title": "Rock and A Hard Place",
+      "url": "https://lrclib.net/api/search?artist_name=Bailey+Zimmerman&track_name=Rock+and+A+Hard+Place",
+      "error": "HTTP Error 503: Service Unavailable"
+    },
+    {
+      "artist": "Noah Kahan",
+      "title": "Stick Season",
+      "url": "https://lrclib.net/api/search?artist_name=Noah+Kahan&track_name=Stick+Season",
+      "response_bytes": 228799,
+      "returned_records": 20,
+      "exact_name_records_with_plain_lyrics": 20,
+      "smallest_matching_record_bytes": 11406
+    },
+    {
+      "artist": "Taylor Swift",
+      "title": "Fortnight",
+      "url": "https://lrclib.net/api/search?artist_name=Taylor+Swift&track_name=Fortnight",
+      "response_bytes": 197245,
+      "returned_records": 20,
+      "exact_name_records_with_plain_lyrics": 19,
+      "smallest_matching_record_bytes": 9398
+    },
+    {
+      "artist": "Halsey",
+      "title": "Ego",
+      "url": "https://lrclib.net/api/search?artist_name=Halsey&track_name=Ego",
+      "error": "HTTP Error 503: Service Unavailable"
+    },
+    {
+      "artist": "Post Malone",
+      "title": "I Had Some Help",
+      "url": "https://lrclib.net/api/search?artist_name=Post+Malone&track_name=I+Had+Some+Help",
+      "response_bytes": 183733,
+      "returned_records": 20,
+      "exact_name_records_with_plain_lyrics": 20,
+      "smallest_matching_record_bytes": 8497
+    }
+  ],
+  "total_response_bytes": 1177608
+}

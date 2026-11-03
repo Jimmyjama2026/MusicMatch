@@ -1,0 +1,5 @@
+pandas>=2.2,<4
+scikit-learn>=1.5,<2
+tzdata>=2025.1
+PySide6-Essentials==6.12.0
+py3langid==0.4.0

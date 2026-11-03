@@ -1,0 +1,74 @@
+{
+  "vectors_active": true,
+  "vector_warning": null,
+  "enrichment_warning": null,
+  "catalog_rows": 200000,
+  "vector_shape": [
+    200000,
+    21
+  ],
+  "feature_version": "rich-audio-vectors-v1",
+  "source_fingerprint": "9272bd03096d57ac0bdd111182e253f4fec44cb3eba818443a39a3eeb4125a0c",
+  "index_retained_bytes": 33639245,
+  "load_seconds": 3.7992802998051047,
+  "favorite_count": 6,
+  "requests_per_model": 4,
+  "timings_ms": {
+    "baseline": {
+      "mean": 142.08634989336133,
+      "max": 160.0124998949468
+    },
+    "neighborhood_hybrid": {
+      "mean": 124.25009999424219,
+      "max": 141.69399999082088
+    }
+  },
+  "new_results": [
+    {
+      "title": "Gatinha Manhosa",
+      "artists": "Erasmo Carlos",
+      "anchor": "2Dct3GykKZ58hpWRFfe2Qd",
+      "group": 1,
+      "groups": 5,
+      "distance": 0.0243088286370039,
+      "model": "rich-neighborhoods-listening-v1"
+    },
+    {
+      "title": "拼命無恙 in Bb major",
+      "artists": "Terence Lam",
+      "anchor": "7lPN2DXiMsVn7XUKtOW1CS",
+      "group": 0,
+      "groups": 5,
+      "distance": 0.025200147181749344,
+      "model": "rich-neighborhoods-listening-v1"
+    },
+    {
+      "title": "ОК",
+      "artists": "LSP",
+      "anchor": "3aQem4jVGdhtg116TmJnHz",
+      "group": 2,
+      "groups": 5,
+      "distance": 0.02653760090470314,
+      "model": "rich-neighborhoods-listening-v1"
+    },
+    {
+      "title": "Walk on By - Radio Version",
+      "artists": "Young Deenay",
+      "anchor": "6DCZcSspjsKoFjzjrWoCdn",
+      "group": 3,
+      "groups": 5,
+      "distance": 0.03435106575489044,
+      "model": "rich-neighborhoods-listening-v1"
+    },
+    {
+      "title": "Coureuge Viva",
+      "artists": "Tourist LeMC",
+      "anchor": "127QTOFJsJQp5LbJbu3A1y",
+      "group": 4,
+      "groups": 5,
+      "distance": 0.042361970990896225,
+      "model": "rich-neighborhoods-listening-v1"
+    }
+  ],
+  "limitations": "Single-machine warm smoke measurement using saved favorites without rating feedback or Fresh exclusions; does not establish preference quality."
+}
