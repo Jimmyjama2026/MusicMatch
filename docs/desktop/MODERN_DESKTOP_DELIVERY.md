@@ -30,7 +30,7 @@ without an artist bonus. This is a development regression, not proof of overall
 quality. No neural network is trained: the active Test profile has seven Yes
 judgments and no taste-No judgments. The 200,000-song CSV and saved 21-dimensional
 vectors remain the audio catalog. No new bulk music, lyrics or audio was downloaded.
-See [ranking evidence and limitations](RANKING_REFACTOR_REPORT.md).
+See [ranking evidence and limitations](../recommendations/RANKING_REFACTOR_REPORT.md).
 
 ## Validation and performance
 

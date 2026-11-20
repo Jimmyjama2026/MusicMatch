@@ -11,7 +11,7 @@ Reviewed October 31, 2026 by the primary agent and one independent devil's-advoc
 
 The full suite passes **52 tests in 12.03 seconds**, including the new desktop regression and four new hybrid tests. The independent agent reread the corrections and reported no remaining blocker for testing. Production widgets, layout and scrolling were unchanged; personal database contents were not edited by the tests. Optional enrichment still loads offline and all application search/recommendation work uses the existing background worker.
 
-A new smoke measurement against the saved 4,115-entry catalog loaded all 725 usable relationships without warnings and returned five suggestions. Six alternating warm requests averaged **233 ms original / 237 ms enriched**; maxima were **274 / 294 ms**. Startup took 4.72 seconds. These timings vary with machine load and are not a guarantee; compare paired runs rather than the absolute numbers from the earlier session. See [raw review measurements](enrichment_review_performance.json).
+A new smoke measurement against the saved 4,115-entry catalog loaded all 725 usable relationships without warnings and returned five suggestions. Six alternating warm requests averaged **233 ms original / 237 ms enriched**; maxima were **274 / 294 ms**. Startup took 4.72 seconds. These timings vary with machine load and are not a guarantee; compare paired runs rather than the absolute numbers from the earlier session. See [raw review measurements](../measurements/enrichment_review_performance.json).
 
 ## Agreed next-round priorities — proposals, not implemented
 

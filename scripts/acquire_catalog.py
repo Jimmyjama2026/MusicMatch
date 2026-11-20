@@ -19,7 +19,8 @@ def main():
     parser.add_argument("--transport", choices=("urllib", "curl"), default="urllib", help="Native curl is an optional verified-HTTPS Windows fallback")
     parser.add_argument("--artist-ids", type=Path, help="JSON mapping artist name to manually verified MBID")
     args = parser.parse_args()
-    names = args.artist or [a["artist"] for a in json.loads((ROOT / "data/coverage_audit.json").read_text(encoding="utf-8"))["artists"]]
+    coverage_path = ROOT / "data/catalog_inputs/coverage_audit.json"
+    names = args.artist or [a["artist"] for a in json.loads(coverage_path.read_text(encoding="utf-8"))["artists"]]
     overrides = json.loads(args.artist_ids.read_text(encoding="utf-8")) if args.artist_ids else None
     client = JsonClient(ROOT / "data/enrichment", args.user_agent, response_limit=250_000, opener=CurlResponse if args.transport == "curl" else open_approved)
     with client.exclusive():

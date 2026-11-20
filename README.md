@@ -2,27 +2,35 @@
 
 A local desktop music recommender with explanations and human feedback.
 
+## Folder guide
+
+- `data/` contains the Python app, desktop UI, song catalog, and local feedback database. The acquisition script reads its checked-in inputs from `data/catalog_inputs/`.
+- `docs/` contains notes grouped by catalog, desktop, learning, recommendations, and planning. Saved benchmark and audit results are in `docs/measurements/`.
+- `scripts/` contains catalog acquisition, index builds, and diagnostics. `tests/` contains the verification suite.
+
+## Recent updates
+
 The default desktop now uses a charcoal and royal-blue Qt interface. See the
-[delivery notes](data/MODERN_DESKTOP_DELIVERY.md) for this round's changes and checks.
-The [neighborhood map and discovery update](data/NEIGHBORHOOD_VISUALS.md) adds saved
+[delivery notes](docs/desktop/MODERN_DESKTOP_DELIVERY.md) for this round's changes and checks.
+The [neighborhood map and discovery update](docs/desktop/NEIGHBORHOOD_VISUALS.md) adds saved
 visual explanations and two unfamiliar-artist slots to normal five-song requests.
-The [title screening, steering and A/B update](data/STEERING_LANGUAGE_COMPARISONS.md)
+The [title screening, steering and A/B update](docs/desktop/STEERING_LANGUAGE_COMPARISONS.md)
 adds local title-language estimates, request-only controls under More like this,
 and optional comparisons that influence future recommendations without dislikes.
-The [feedback and coverage fix](data/FEEDBACK_AND_COVERAGE_FIX.md) preserves scroll
+The [feedback and coverage fix](docs/recommendations/FEEDBACK_AND_COVERAGE_FIX.md) preserves scroll
 position when voting, balances liked-artist anchors and applies Too slow/Too fast
 feedback directionally within the relevant neighborhood.
-The [local neural learning setup](data/NEURAL_LEARNING_SETUP.md) adds durable
+The [local neural learning setup](docs/learning/NEURAL_LEARNING_SETUP.md) adds durable
 judgment history and bounded background shadow training, screens suggestions for
 English titles only, and reduces song duration's matching weight by 90%.
-The [genre training inputs](data/NEURAL_GENRE_INPUTS.md) add saved candidate/anchor
+The [genre training inputs](docs/learning/NEURAL_GENRE_INPUTS.md) add saved candidate/anchor
 genres, overlap and evidence-source indicators to that shadow learner.
-Adding a song to [Liked songs also counts as a training Yes](data/FAVORITES_AS_TRAINING_YES.md),
+Adding a song to [Liked songs also counts as a training Yes](docs/learning/FAVORITES_AS_TRAINING_YES.md),
 with duplicates merged and search-added likes supported without a recommendation anchor.
 
 ## Preference neighborhoods
 
-The [artist genre fallback](data/ARTIST_GENRE_FALLBACK.md) supplies genre evidence for
+The [artist genre fallback](docs/catalog/ARTIST_GENRE_FALLBACK.md) supplies genre evidence for
 192,166 of 200,000 songs (96.1%) from the cached source's artist IDs. Available song-level
 labels take priority; artist-based matches are identified in explanations. Genre overlap
 is required for known-genre neighbourhoods and suggestions. Combining both sources
@@ -30,7 +38,7 @@ covers 192,167 songs; the remaining 7,833 have an explicitly unverified audio fa
 
 The current default uses saved 21-dimensional vectors from the CSV's 13 song
 measurements, matches individual liked-song neighborhoods, and selects varied
-results across those groups. See [implementation and measurements](data/NEIGHBORHOOD_IMPLEMENTATION.md).
+results across those groups. See [implementation and measurements](docs/recommendations/NEIGHBORHOOD_IMPLEMENTATION.md).
 The vector index is built offline with `scripts/build_song_vectors.py`; the desktop
 loads it in the background. Missing or stale vectors use the original model with
 a fallback status. Restart the app after an index build and request new suggestions;
@@ -46,9 +54,9 @@ audio recommender. New catalog-only tracks never receive invented audio features
 The licensed MulJam text experiment (`scripts/build_text_index.py`) persists sparse
 song vectors and compares them on demand, separately from personal recommendations.
 See `data/TEXT_SIMILARITY_EXPERIMENT.md` for its measured coverage and limitations.
-See [the pilot run report](data/ENRICHMENT_RUN_REPORT.md) for measured storage,
+See [the pilot run report](docs/catalog/ENRICHMENT_RUN_REPORT.md) for measured storage,
 validation, performance and remaining coverage limitations.
-The [second review](data/SECOND_REVIEW_AND_NEXT_ROUND.md) records additional fixes,
+The [second review](docs/planning/SECOND_REVIEW_AND_NEXT_ROUND.md) records additional fixes,
 the latest validation and proposed next-round work.
 
 ## Run in VS Code

@@ -6,7 +6,7 @@ A music discovery app that recommends songs from your favorites and explains eac
 CS111 project requiring at least 10 hours of actual research, coding, debugging, and testing. Build programming skills and a portfolio project relevant to machine learning and software engineering. AI assistance is allowed. Keep an honest time log of your own work.
 
 ## Status — October 29, 2026
-The original command-line prototype has been extended into a local Tkinter desktop application. Run `main.py` from the root or `data/main.py` directly; VS Code launch instructions are in README.md. The user confirmed the existing Python environment works.
+The original command-line prototype has been extended into a local Tkinter desktop application. Run `main.py` from the root or `data/main.py` directly; VS Code launch instructions are in [README.md](../../README.md). The user confirmed the existing Python environment works.
 
 ## Implemented
 - Load and validate the local dataset; deduplicate recordings and track IDs.

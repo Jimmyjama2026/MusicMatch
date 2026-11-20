@@ -1,6 +1,6 @@
 # Offline enrichment implementation
 
-The rich-vector model now supersedes the four-feature ranking policy below when its index is available. See [NEIGHBORHOOD_IMPLEMENTATION.md](NEIGHBORHOOD_IMPLEMENTATION.md) for the current default, smaller listening adjustments and removal of the mandatory discovery slot on rich results. The earlier policy remains relevant to the legacy fallback.
+The rich-vector model now supersedes the four-feature ranking policy below when its index is available. See [NEIGHBORHOOD_IMPLEMENTATION.md](../recommendations/NEIGHBORHOOD_IMPLEMENTATION.md) for the current default, smaller listening adjustments and removal of the mandatory discovery slot on rich results. The earlier policy remains relevant to the legacy fallback.
 
 ## What changes the personal recommender
 
@@ -27,11 +27,11 @@ Run `python scripts/build_text_index.py` to reuse downloaded source and saved in
 
 ## Acquisition and validation
 
-Run `python scripts/acquire_catalog.py --transport curl --artist-ids data/verified_artist_ids.json` separately from the desktop. The CLI is resumable; starts from the 27 artists in coverage_audit.json; honors provider request pacing and Retry-After; never weakens TLS verification; caps per-response and cumulative transfer/storage; keeps a conservative transfer reservation across failures; and preserves prior catalog data on partial/failed refresh. Credentials are not required for the public endpoints used here. No personal account is connected or personal listening history uploaded. A stale acquisition lock requires confirming the recorded process is no longer active before removing it.
+Run `python scripts/acquire_catalog.py --transport curl --artist-ids data/catalog_inputs/verified_artist_ids.json` separately from the desktop. The CLI is resumable; starts from the 27 artists in coverage_audit.json; honors provider request pacing and Retry-After; never weakens TLS verification; caps per-response and cumulative transfer/storage; keeps a conservative transfer reservation across failures; and preserves prior catalog data on partial/failed refresh. Credentials are not required for the public endpoints used here. No personal account is connected or personal listening history uploaded. A stale acquisition lock requires confirming the recorded process is no longer active before removing it.
 
 Acquisition currently browses all credited recording versions. It explicitly does not claim a verified studio-only discography; live/remix/unofficial filtering remains a follow-up after usable catalog retrieval. Completion flags distinguish metadata and listening sources. File/report errors are part of the coverage report, not interpreted as zero provider coverage.
 
-The current cache is a resumable frozen snapshot, with no automatic expiry or explicit refresh switch. Rerunning the CLI reuses successful cached responses; it does not guarantee new provider releases or relationships appear. Controlled revalidation is a next-round proposal. A future text-model version change also requires a new index location or explicit rebuild; the current directory name only includes the corpus hash. See [second review and proposals](SECOND_REVIEW_AND_NEXT_ROUND.md).
+The current cache is a resumable frozen snapshot, with no automatic expiry or explicit refresh switch. Rerunning the CLI reuses successful cached responses; it does not guarantee new provider releases or relationships appear. Controlled revalidation is a next-round proposal. A future text-model version change also requires a new index location or explicit rebuild; the current directory name only includes the corpus hash. See [second review and proposals](../planning/SECOND_REVIEW_AND_NEXT_ROUND.md).
 
 ## Quality evaluation before changing weights further
 

@@ -1,6 +1,6 @@
 # Revised plan: modern dark desktop and better discovery
 
-October 31, 2026. **Approved and implemented.** The user selected dark charcoal and dark royal blue, overriding the earlier mint accent proposal. This document retains the researched plan and critique; see [delivery notes](MODERN_DESKTOP_DELIVERY.md) for completed work and validation. Research roles: modern_ui_research (design/toolkit), lyrics (recommendation/code research), devils_advocate (independent critique), and primary agent (local evidence and synthesis).
+October 31, 2026. **Approved and implemented.** The user selected dark charcoal and dark royal blue, overriding the earlier mint accent proposal. This document retains the researched plan and critique; see [delivery notes](../desktop/MODERN_DESKTOP_DELIVERY.md) for completed work and validation. Research roles: modern_ui_research (design/toolkit), lyrics (recommendation/code research), devils_advocate (independent critique), and primary agent (local evidence and synthesis).
 
 ## What worked for James Arthur
 
@@ -16,7 +16,7 @@ The saved Yes-rated “Quite Miss Home” result matched **“drivers license”
 | Duration | 243.2 seconds | 242.0 seconds |
 | Key / mode / meter codes | 10 / 1 / 4 | 10 / 1 / 4 |
 
-Most residual weighted distance came from acousticness and loudness differences. That identifies where the numerical match came from, not which perceptual quality made the user enjoy it. No lyrics, vocal timbre or instrumentation were analyzed. The saved Yes already permits this song to become a positive anchor; the current +.08 prior penalty for additional Yes anchors can limit its influence. Preserve the historical match as a development regression, not a held-out test or a rule requiring romantic songs/James Arthur. It must remain excluded from recommendations once liked. Raw audit: [james_arthur_match_audit.json](james_arthur_match_audit.json).
+Most residual weighted distance came from acousticness and loudness differences. That identifies where the numerical match came from, not which perceptual quality made the user enjoy it. No lyrics, vocal timbre or instrumentation were analyzed. The saved Yes already permits this song to become a positive anchor; the current +.08 prior penalty for additional Yes anchors can limit its influence. Preserve the historical match as a development regression, not a held-out test or a rule requiring romantic songs/James Arthur. It must remain excluded from recommendations once liked. Raw audit: [james_arthur_match_audit.json](../measurements/james_arthur_match_audit.json).
 
 ## Proposed work, in order
 

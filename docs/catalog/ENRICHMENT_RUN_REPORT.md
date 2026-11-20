@@ -2,7 +2,7 @@
 
 Implementation and review completed October 30–31, 2026. The bounded acquisition pass finished with partial coverage; no collector remains running.
 
-This records the first implementation run. See the [second review](SECOND_REVIEW_AND_NEXT_ROUND.md) for subsequent fixes, the latest 52-test validation and next-round proposals.
+This records the first implementation run. See the [second review](../planning/SECOND_REVIEW_AND_NEXT_ROUND.md) for subsequent fixes, the latest 52-test validation and next-round proposals.
 
 ## Measured acquisition
 
@@ -12,7 +12,7 @@ Additional retained source/cache/index/catalog files total **27,779,345 bytes (2
 
 The final snapshot reports six errors: a transient local atomic-file replacement denial for Plain White T’s (its 100 rows were nevertheless retained), MusicBrainz HTTP 503 for Coldplay, TLS EOF failures for Jack Johnson/Benson Boone/Jordan Davis, and a circuit-breaker skip for Post Malone. The remaining artists were deliberately paginated only partially, and listening collection was skipped on the final breadth-first subset. Completion flags remain false. Resuming is supported, but this report does not claim full coverage.
 
-See [machine-readable measured counts](enrichment_run_stats.json) for every artist, source totals, errors and byte accounting. The raw sidecar's `requested_artists` field describes the last subset request, while its retained `artists` list contains all 27 resolved IDs. Artist counts in the report are derived from retained recording rows rather than the last pagination pass's counters.
+See [machine-readable measured counts](../measurements/enrichment_run_stats.json) for every artist, source totals, errors and byte accounting. The raw sidecar's `requested_artists` field describes the last subset request, while its retained `artists` list contains all 27 resolved IDs. Artist counts in the report are derived from retained recording rows rather than the last pagination pass's counters.
 
 ## What is implemented
 
@@ -31,7 +31,7 @@ All **47 tests passed** in the final full-suite run (13.7 seconds). Tests includ
 
 A real existing `drivers license` favorite produced four audio results and one cached ListenBrainz discovery (`Please Me`, Cardi B / Bruno Mars), demonstrating the integration path. It does not establish recommendation quality or similarity of sound.
 
-Six alternating warm requests on the same loaded engine averaged **131 ms original / 141 ms enriched**, with maxima **150 / 162 ms**. Loading the 200,000-song dataset and optional sidecar took 3.63 seconds in that run. The snapshot had 2,828 catalog entries and 714 edges. Collection was still active; this is a single-machine smoke measurement, not a controlled performance guarantee. Queries and initialization use the app's existing background worker. Text-index building and network acquisition never run inside the desktop. See [raw measurements](enrichment_performance.json).
+Six alternating warm requests on the same loaded engine averaged **131 ms original / 141 ms enriched**, with maxima **150 / 162 ms**. Loading the 200,000-song dataset and optional sidecar took 3.63 seconds in that run. The snapshot had 2,828 catalog entries and 714 edges. Collection was still active; this is a single-machine smoke measurement, not a controlled performance guarantee. Queries and initialization use the app's existing background worker. Text-index building and network acquisition never run inside the desktop. See [raw measurements](../measurements/enrichment_performance.json).
 
 ## Storage interpretation
 
